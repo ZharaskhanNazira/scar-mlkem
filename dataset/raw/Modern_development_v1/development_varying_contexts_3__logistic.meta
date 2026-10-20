@@ -1,0 +1,1 @@
+session=development_varying_contexts_3 policy=logistic workload=varying_contexts seed=200903 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9854016 summed_residency_ns=1961386836 cache_zeroizations=202 late_clear_count=0 max_lateness_ns=0 rejected_admissions=587 secrets_mlocked_bytes=1749152 peak_rss_bytes=3751936 cpu=2

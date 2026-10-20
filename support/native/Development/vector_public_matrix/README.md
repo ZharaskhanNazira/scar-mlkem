@@ -1,0 +1,9 @@
+# Shared vectorized public codec: prospective implementation
+
+Canonical proposed method remains SCAR-MLKEM. This isolated development source changes only implementation of the same public12-bit codec. Original packed library, controller and failed40-process screen remain immutable. All admissible policies must receive the same eventual library. No speed or superiority result is implied by source or integer qualification.
+
+For each canonical pair a,b, encoded bytes are a mod256, floor(a/256)+16(b mod16), and floor(b/16); inversion recovers a,b exactly. LD2/ST3 and LD3/ST2 express the same interleaving in batches of8pairs. Domain validity remains0<=x<3329 for every coefficient: reinterpret signed16 as unsigned, compare each lane to3329, OR all invalid masks, reduce once. A separate validation pass precedes all output writes; checks are not removed for speed. Output is still384bytes/poly,3456bytes/matrix,3520bytes/record. Constant finite loop bounds; no claim of new cryptography or side-channel certification.
+
+Hypothesis: replace per-coefficient scalar assertion branches and scalar packing with batched NEON operations while preserving full checks. This targets the measured public preparation burden in the exposed development tail diagnostic; that diagnostic is conditional wall-time evidence, not causal CPU attribution. Actual Pi crypto/differential/official checks, generated-code inspection, new shared calibration and an authorized bounded timing comparison are still required. Existing packed coefficients must not be reused as this library's measured costs.
+
+Primary API reference: Arm Neon Intrinsics Reference, https://arm-software.github.io/acle/neon_intrinsics/advsimd.html (consulted2026-10-19). Vectorization is established practice, not claimed as original scientific novelty.

@@ -1,0 +1,1 @@
+session=modern_smoke_abrupt_rf policy=rf workload=abrupt seed=7781 requests=500 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9856623 summed_residency_ns=1307990176 cache_zeroizations=135 late_clear_count=0 max_lateness_ns=0 rejected_admissions=73 secrets_mlocked_bytes=1189152 peak_rss_bytes=5718016 cpu=2

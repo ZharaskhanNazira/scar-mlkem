@@ -1,0 +1,7 @@
+Policy,Sessions,Secret hit (%),Zeroizations per session,Max secret residency (ms),Sessions with a late clear,Late clears,Max lateness (µs)
+Seed-only (standard),120,0.0,0.0,0.0,0,0,0.0
+Public S3-FIFO,120,0.0,0.0,0.0,0,0,0.0
+SIEVE,120,36.339166666666664,633.575,9.600204,0,0,0.0
+LeCaR,120,45.0,544.875,10.01537,1,1,15.37
+TinyLFU,120,40.07583333333333,367.3666666666667,10.56563,2,3,565.63
+SCAR-MLKEM,120,32.7125,168.625,9.904612,0,0,0.0

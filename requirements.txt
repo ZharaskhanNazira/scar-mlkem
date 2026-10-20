@@ -1,0 +1,10 @@
+# Python 3.11; versions used to execute the notebooks
+numpy==1.26.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+matplotlib==3.10.9
+pyarrow==24.0.0
+joblib==1.5.3
+jupyterlab==4.5.6
+ipykernel==7.2.0

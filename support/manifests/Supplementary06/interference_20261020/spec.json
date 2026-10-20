@@ -1,0 +1,2453 @@
+{
+  "binary": "Native/Development/core_controller/build/scar_mlkem",
+  "binary_sha256": "d1042601978864a8b7be212dfb6a304112980a235ceb80569081542d597c638b",
+  "campaign": "Supplementary06",
+  "contexts": 64,
+  "cooldown_seconds": 0.3,
+  "cost_names": [
+    "C00",
+    "C01",
+    "C10",
+    "C11",
+    "addP",
+    "addS",
+    "eraseP",
+    "eraseS"
+  ],
+  "costs_ns": {
+    "C00": 31826.85166666667,
+    "C01": 28780.332083333335,
+    "C10": 22766.026249999995,
+    "C11": 19721.5975,
+    "addP": 1118.8241666666672,
+    "addS": 361.53874999999994,
+    "eraseP": 584.9583333333333,
+    "eraseS": 409.91333333333336
+  },
+  "cpu": 2,
+  "drift": 1,
+  "governor": "performance",
+  "guard_us": 500,
+  "history_capacity": 1000,
+  "horizon_ms": 10,
+  "identity": "interference_20261020",
+  "interval_us": 500,
+  "library": "Native/Development/vector_public_matrix/build/libpublic_matrix.a",
+  "library_sha256": "18fdab47121f1e9955f8e0e31f2692b5aa502b8a853edac75f7d1ed31004788f",
+  "plan": [
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "none",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "public_s3",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "none",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "public_s3",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7300000,
+      "session_id": "test_uniform_7300000_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "none",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "public_s3",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "none",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "public_s3",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7300001,
+      "session_id": "test_uniform_7300001_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "none",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "public_s3",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "none",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "public_s3",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7300010,
+      "session_id": "test_poisson_7300010_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "none",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "public_s3",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "none",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "public_s3",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7300011,
+      "session_id": "test_poisson_7300011_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "none",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "public_s3",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "none",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "public_s3",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7300020,
+      "session_id": "test_zipf_7300020_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "none",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "public_s3",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "none",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "public_s3",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7300021,
+      "session_id": "test_zipf_7300021_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "none",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "public_s3",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "none",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "public_s3",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7300030,
+      "session_id": "test_bursty_7300030_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "none",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "public_s3",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "none",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "public_s3",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7300031,
+      "session_id": "test_bursty_7300031_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "none",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "public_s3",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "none",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "public_s3",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7300040,
+      "session_id": "test_periodic_7300040_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "none",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "public_s3",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "none",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "public_s3",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7300041,
+      "session_id": "test_periodic_7300041_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "none",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "public_s3",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "none",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "public_s3",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7300050,
+      "session_id": "test_nonstationary_7300050_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "none",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "public_s3",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "none",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "public_s3",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7300051,
+      "session_id": "test_nonstationary_7300051_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "none",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "public_s3",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "none",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "public_s3",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7300060,
+      "session_id": "test_abrupt_7300060_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "none",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "public_s3",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "none",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "public_s3",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7300061,
+      "session_id": "test_abrupt_7300061_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "none",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "public_s3",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "none",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "public_s3",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7300070,
+      "session_id": "test_thrashing_7300070_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "none",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "public_s3",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "none",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "public_s3",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7300071,
+      "session_id": "test_thrashing_7300071_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "none",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "public_s3",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "none",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "public_s3",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7300080,
+      "session_id": "test_hotcold_7300080_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "none",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "public_s3",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "none",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "public_s3",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7300081,
+      "session_id": "test_hotcold_7300081_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "none",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "public_s3",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "none",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "public_s3",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7300090,
+      "session_id": "test_varying_contexts_7300090_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "none",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_32k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "public_s3",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_32k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "none",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_64k_none",
+      "setting": "none",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "public_s3",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_64k_public_s3",
+      "setting": "public_s3",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7300091,
+      "session_id": "test_varying_contexts_7300091_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    }
+  ],
+  "purpose": "busy loops on cores 0, 1, 3",
+  "raw_dir": "Dataset/Raw/PiExperiments/Supplementary06/interference_20261020",
+  "remote_root": "/home/research/Nazira_Crystals-Cyber",
+  "requests": 1000,
+  "scar": {
+    "k": 0,
+    "margin": 0,
+    "nu": 2
+  },
+  "schema": "scar_mlkem_campaign_v2",
+  "source_manifest_sha256": "9e7b1dd972cc35863792ad8fb46bf02cc1b646748f0ec203c0021f252f0783b2",
+  "split": "test",
+  "timeout_seconds": 120,
+  "worker_sha256": "5c2e0e8b6374021e0d4ce24d69a346a85d35aa45f6b69d5b3f6cd6c83dced0bb"
+}

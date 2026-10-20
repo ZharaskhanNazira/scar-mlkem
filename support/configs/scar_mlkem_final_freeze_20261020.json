@@ -1,0 +1,63 @@
+{
+  "arenas": [
+    32768,
+    65536
+  ],
+  "competitors": {
+    "primary": "none",
+    "secondary": [
+      "public_s3",
+      "sieve",
+      "lecar",
+      "tiny"
+    ]
+  },
+  "components": 31,
+  "contexts": 64,
+  "costs_ns": {
+    "C00": 31826.85166666667,
+    "C01": 28780.332083333335,
+    "C10": 22766.026249999995,
+    "C11": 19721.5975,
+    "addP": 1118.8241666666672,
+    "addS": 361.53874999999994,
+    "eraseP": 584.9583333333333,
+    "eraseS": 409.91333333333336
+  },
+  "costs_source": "Reports/CoreCalibration/calibration8_20261019/frozen_costs.json",
+  "development_campaign": "Manifests/Development05/development_20261020",
+  "frozen_utc": "2026-10-20T07:28:59+00:00",
+  "guard_us": 500,
+  "history_capacity": 1000,
+  "horizon_ms": 10,
+  "inference": {
+    "alpha": 0.05,
+    "exclusion": "a process without native success is excluded from CPU means and reported",
+    "interval": "stratified percentile bootstrap over sessions within strata",
+    "lifecycle": "late secret clears counted and reported; no process is excluded for lateness",
+    "resamples": 10000,
+    "secondary_adjustment": "Holm over four one-sided paired comparisons",
+    "tails": "p95/p99 response ratio with bootstrap interval"
+  },
+  "interval_us": 500,
+  "method": "SCAR-MLKEM",
+  "native": {
+    "binary": "Native/Development/core_controller/build/scar_mlkem",
+    "binary_sha256": "d1042601978864a8b7be212dfb6a304112980a235ceb80569081542d597c638b",
+    "library": "Native/Development/vector_public_matrix/build/libpublic_matrix.a",
+    "library_sha256": "18fdab47121f1e9955f8e0e31f2692b5aa502b8a853edac75f7d1ed31004788f",
+    "source_manifest_sha256": "9e7b1dd972cc35863792ad8fb46bf02cc1b646748f0ec203c0021f252f0783b2"
+  },
+  "policy": "scar",
+  "primary_endpoint": "paired complete request-phase thread CPU per request, session level, equal-stratum mean over 20 strata",
+  "requests": 1000,
+  "scar": {
+    "k": 0,
+    "margin": 0,
+    "nu": 2
+  },
+  "schema": "scar_mlkem_final_freeze_v2",
+  "seeds_per_family": 6,
+  "test_seed_namespace": 7000000,
+  "ttl_ms": 10
+}

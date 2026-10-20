@@ -1,0 +1,2 @@
+perf_open_errno=0 frequency_temperature_sampling_every_requests=64
+session=development_hotcold_3 split=development workload=hotcold workload_seed=200803 keys=64 requests=1000 scheduled_mean_interval_us=500.000 cpu=2 secrets_mlocked_bytes=1441952 dumpable=0 utc_anchor=1792327801.854572689 monotonic_start_ns=9871741136905 minor_faults=225 major_faults=0 voluntary_cs=1000 involuntary_cs=3

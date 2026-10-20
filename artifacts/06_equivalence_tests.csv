@@ -1,0 +1,3 @@
+Quantity,Sessions,Geometric mean ratio,Equivalence margin,TOST p,Equivalent at α = 0.05
+Peak RSS ratio SCAR / seed-only,120,1.0032417936569769,±2 %,5.246125083789897e-45,yes
+p95 response ratio SCAR / seed-only,120,1.0128089659386246,±5 %,4.785582064206521e-13,yes

@@ -1,0 +1,2 @@
+perf_open_errno=0 frequency_temperature_sampling_every_requests=64
+session=train_poisson_3 split=train workload=poisson workload_seed=100103 keys=64 requests=1000 scheduled_mean_interval_us=500.000 cpu=2 secrets_mlocked_bytes=1441952 dumpable=0 utc_anchor=1792327770.415899556 monotonic_start_ns=9840302463809 minor_faults=226 major_faults=0 voluntary_cs=1000 involuntary_cs=3

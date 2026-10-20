@@ -1,0 +1,1 @@
+session=development_poisson_2 policy=tiny_lfu workload=poisson seed=200102 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9855702 summed_residency_ns=6662930568 cache_zeroizations=688 late_clear_count=0 max_lateness_ns=0 rejected_admissions=120 secrets_mlocked_bytes=1749152 peak_rss_bytes=3751936 cpu=2

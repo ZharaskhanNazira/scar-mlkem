@@ -1,0 +1,1 @@
+session=development_poisson_3 policy=costaware_tiny workload=poisson seed=200103 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9855794 summed_residency_ns=6678530649 cache_zeroizations=703 late_clear_count=0 max_lateness_ns=0 rejected_admissions=80 secrets_mlocked_bytes=1749152 peak_rss_bytes=3227648 cpu=2

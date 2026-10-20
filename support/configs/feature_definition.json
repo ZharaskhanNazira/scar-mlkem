@@ -1,0 +1,39 @@
+{
+  "version": "causal-v2-nanosecond-boundaries",
+  "features": [
+    "c5",
+    "c10",
+    "c20",
+    "c50",
+    "gap50",
+    "gap_mean",
+    "gap_cv",
+    "exp10",
+    "share_shift",
+    "rate5",
+    "rate50"
+  ],
+  "history_ms": 50,
+  "horizons_ms": [
+    5,
+    10,
+    20
+  ],
+  "primary_horizon_ms": 10,
+  "purge_ms": 70,
+  "clock": "scheduled_arrival_ns",
+  "decision": "after_current_request",
+  "outer_split": "independent_process_sessions",
+  "inner_split": "expanding_forward_blocks_with_70ms_purge",
+  "preprocessing": "StandardScaler fitted only on fold training rows for logistic regression; trees unscaled",
+  "categorical_predictors": [],
+  "excluded": [
+    "key_id",
+    "workload_id",
+    "session_id",
+    "service_ns",
+    "cache_hit",
+    "future_reuse"
+  ],
+  "energy_available": false
+}

@@ -1,0 +1,4 @@
+Block,Settings,Sessions,Processes
+A: policies at T = 10 ms,6,60,360
+B: SCAR component removals,5,60,300
+"C: lifetime sensitivity (SCAR, SIEVE)",4,60,240

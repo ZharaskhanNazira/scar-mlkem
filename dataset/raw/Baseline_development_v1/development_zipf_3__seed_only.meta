@@ -1,0 +1,1 @@
+session=development_zipf_3 policy=seed_only workload=zipf seed=200203 requests=1000 capacity=0 ttl_ns=10000000 guard_ns=200000 max_residency_ns=0 summed_residency_ns=0 cache_zeroizations=0 late_clear_count=0 max_lateness_ns=0 rejected_admissions=0 secrets_mlocked_bytes=1749152 peak_rss_bytes=5423104 cpu=2

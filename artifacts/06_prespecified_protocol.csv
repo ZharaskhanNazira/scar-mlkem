@@ -1,0 +1,13 @@
+Item,Rule
+Replication unit,"one native session (family, reserved seed, arena); 120 sessions, 20 strata × 6 seeds"
+Primary endpoint,"paired complete request-phase thread CPU per request, session level, equal-stratum mean over 20 strata"
+Primary comparison,SCAR-MLKEM vs seed-only reconstruction (paired within session)
+Effect measures,"absolute saving (µs/request) and relative saving = 100 × mean Δ / mean seed-only CPU, equal-stratum means"
+Interval,"stratified percentile bootstrap over sessions within strata, 10000 resamples, 95 % two-sided and one-sided 95 % lower bound"
+Secondary comparisons,"SCAR-MLKEM vs public S3-FIFO, SIEVE, LeCaR, TinyLFU; Holm over four one-sided paired comparisons"
+Tails,p95/p99 response ratio with bootstrap interval
+Lifecycle,late secret clears counted and reported; no process is excluded for lateness
+Exclusion,a process without native success is excluded from CPU means and reported
+Frozen method,"SCAR-MLKEM, mask 31, T = 10 ms, guard 500 µs, horizon 10 ms, k/ν/margin = 0/2/0"
+Frozen at,2026-10-20T07:28:59+00:00
+Campaign registered at,2026-10-20T07:28:59+00:00

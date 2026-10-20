@@ -1,0 +1,2 @@
+Processes,Passed,Failed,Correct decapsulations,Late secret clears,Wall time (min),Board temperature (°C) min,Board temperature (°C) max
+900,900,0,900000,13,8.707153136216599,48.5,52.9

@@ -1,0 +1,43 @@
+{
+  "argv": [
+    "taskset",
+    "-c",
+    "2",
+    "/home/research/Nazira_Crystals-Cyber/Native/Development/core_calibration/build/joint_calibration",
+    "1"
+  ],
+  "before": {
+    "frequency_khz": "2400000",
+    "gid": 1001,
+    "governor": "performance",
+    "groups": [
+      4,
+      20,
+      27,
+      29,
+      44,
+      46,
+      100,
+      102,
+      986,
+      988,
+      989,
+      992,
+      996,
+      1001
+    ],
+    "kernel": "6.12.47+rpt-rpi-2712",
+    "online_cpus": "0-3",
+    "temperature_millic": "47950",
+    "throttled": "throttled=0x0",
+    "uid": 1001
+  },
+  "cooldown_seconds": 0.5,
+  "pid": 108277,
+  "row": {
+    "process_index": 1,
+    "session_id": "calibration_p1"
+  },
+  "spec_sha256": "19835ea1c760b6db1a34495bb780499ae8ab2d6467ce791ae7dabe3bb6fd93a1",
+  "start_ticks": 10931573
+}

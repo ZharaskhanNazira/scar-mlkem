@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+artifacts/replays/
+artifacts/*.tex
+dataset/raw/IoT23/

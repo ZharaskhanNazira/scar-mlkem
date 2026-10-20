@@ -1,0 +1,2 @@
+session=pilot_2 backend=sha3_only cpu=2 arena_locked=1 dumpable=0 interop=pass invalid_ciphertext_rejection=pass perf_open_errno=0 openssl=OpenSSL 3.5.7 9 Jun 2026
+maxrss_kib=6224 minor_faults=269 major_faults=0 voluntary_cs=1 involuntary_cs=8

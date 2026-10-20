@@ -1,0 +1,18 @@
+{
+  "RF": {
+    "apply": false,
+    "slope": 1.0249193798487595,
+    "intercept": -0.04564382841536599,
+    "clip": 1e-06,
+    "selection_split": "development",
+    "fit_split": "train OOF"
+  },
+  "HGB": {
+    "apply": false,
+    "slope": 1.014964615946143,
+    "intercept": -0.04661151691867296,
+    "clip": 1e-06,
+    "selection_split": "development",
+    "fit_split": "train OOF"
+  }
+}

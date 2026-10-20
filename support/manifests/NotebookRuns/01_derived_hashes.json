@@ -1,0 +1,5 @@
+{
+  "Dataset/Splits/development_session_assignments.csv": "2d5d23ba4b9a3de5912581d901e2b27760a5a99c6950204ac48c105855a4846c",
+  "Dataset/Interim/development_events.parquet": "2b4221ef5ba1374bec3fe87a998e18a20927bc27fa1c56c2a03ed055c4b81bcd",
+  "Configs/development_design.json": "81c778462ede2a5e37473a2d62a9ece016b91ad27f77bdb10ad5b6b8096c1784"
+}

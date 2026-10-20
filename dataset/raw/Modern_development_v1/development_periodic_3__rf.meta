@@ -1,0 +1,1 @@
+session=development_periodic_3 policy=rf workload=periodic seed=200403 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9854276 summed_residency_ns=2052651178 cache_zeroizations=210 late_clear_count=0 max_lateness_ns=0 rejected_admissions=164 secrets_mlocked_bytes=1749152 peak_rss_bytes=4800512 cpu=2

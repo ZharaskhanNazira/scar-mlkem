@@ -1,0 +1,5 @@
+Campaign,Processes,Passed,Failed,Mean frequency (MHz),"Scheduler (0 = other, 1 = FIFO)",Late secret clears,Board temperature (°C) max,Wall time (min)
+replication,720,720,0,2400.0,0,19,53.45,6.972989037216666
+frequency,240,240,0,1500.0,0,0,50.15,2.364837373333345
+interference,240,240,0,2400.0,0,31,68.3,2.2934304550832167
+realtime,160,160,0,2400.0,1,0,55.1,1.5483681962998768

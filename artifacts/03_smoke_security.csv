@@ -1,0 +1,8 @@
+Policy,Maximum_residency_ms,Late_clear_events,Maximum_lateness_us,Verified_cache_zeroizations,Locked_arena_bytes
+ewma,9.860407,0,0.0,223,1189152
+fixed_ttl,8.14089,0,0.0,500,1189152
+frequency,9.856944,0,0.0,223,1189152
+lfu,8.091464,0,0.0,500,1189152
+logistic,9.866981,0,0.0,258,1189152
+lru,8.11339,0,0.0,500,1189152
+seed_only,0.0,0,0.0,0,1189152

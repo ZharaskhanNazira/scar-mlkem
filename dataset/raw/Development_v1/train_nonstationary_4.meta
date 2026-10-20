@@ -1,0 +1,2 @@
+perf_open_errno=0 frequency_temperature_sampling_every_requests=64
+session=train_nonstationary_4 split=train workload=nonstationary workload_seed=100504 keys=64 requests=1000 scheduled_mean_interval_us=500.000 cpu=2 secrets_mlocked_bytes=1441952 dumpable=0 utc_anchor=1792327772.184966134 monotonic_start_ns=9842071530369 minor_faults=227 major_faults=0 voluntary_cs=1000 involuntary_cs=3

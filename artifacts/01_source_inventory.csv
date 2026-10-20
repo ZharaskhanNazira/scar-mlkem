@@ -1,0 +1,4 @@
+group,Files,Bytes,MiB,Role
+IoT23,19,30299452,28.895809173583984,"Network context, not key access"
+NIST_ACVP,18,6286975,5.995726585388184,Public cryptographic test fixtures
+Wycheproof,18,8430579,8.040026664733887,Public cryptographic test fixtures

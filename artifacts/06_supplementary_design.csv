@@ -1,0 +1,5 @@
+Campaign,Processes,Policies,Seeds,Condition
+replication,720,6,60,within-device replication
+frequency,240,6,20,pinned 1.5 GHz
+interference,240,6,20,"busy loops on cores 0, 1, 3"
+realtime,160,4,20,SCHED_FIFO priority 10 for the responder

@@ -1,0 +1,1 @@
+session=development_thrashing_3 policy=hgb workload=thrashing seed=200703 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9855092 summed_residency_ns=4708121843 cache_zeroizations=480 late_clear_count=0 max_lateness_ns=0 rejected_admissions=45 secrets_mlocked_bytes=1749152 peak_rss_bytes=3801088 cpu=2

@@ -1,0 +1,281 @@
+--- packed_controller/README.md
++++ core_controller/README.md
+@@ -1,11 +1,11 @@
+-# Shared packed public representation in the joint controller
++# Shared secret-core integration
+ 
+-Prospective integration, not an adopted/timed SCAR-MLKEM result. All 13 policies use the same packed library and 3520-byte public record (3584 with entry header). Source-only differences from the frozen controller are the public payload constant and two matching harness size assertions. No policy score, secret lifetime, expiry/readback, invalid-key handling or commit validation changes.
++Canonical method: SCAR-MLKEM. This is an isolated implementation experiment, not a final performance result.
+ 
+-Local logical-time checks use adapted112-unit public spans. An independent object-list/one-bit oracle checks SCAR and SIEVE placement. The separate SIEVE-parent comparison changes only its public payload constant as well; it demonstrates baseline-policy preservation at equal packed geometry, not identical trajectories to the old4672-byte representation.
++The only production changes from the pinned packed controller are S payload 1152 bytes (1216 with header), exact full-key composition on a hit, prefix extraction on admission, and the previously qualified shared NEON public library. Policy, forecasts, masks, thresholds, pending/publication, non-renewing expiry, erase/readback and no-retention path remain unchanged. All applicable controls receive the same representation and backend.
+ 
+-The 32/64 KiB limits cover the retained arena, not the whole process. All methods retain the same4640-byte Work object. The packed kernel adds a1536-byte temporary public row during cached decapsulation and a4608-byte generation matrix during construction. Compiler frames, nested calls and RSS/stack high water require separate accounting. A .su file bounds each listed compiler frame only, not the whole call chain or OS stack. No smaller-total-memory claim is made.
++A hit obtains S by the existing context/generation-checked lookup and combines it with that context's immutable enrollment. The existing generation and rotation fixtures still apply. The harness has static enrollment during one process: dynamic replacement of enrolled keys is not implemented or claimed. The controller rotation test covers invalidation, not a deployed key-import protocol.
+ 
+-Shared costs from the preceding library may be used only as finite functional fixture inputs. They are ineligible as calibration for packed-policy timing. Frozen recalibration and a prospective budget allocation must precede any performance campaign. No crypto or policy timing is authorized by compilation or logical qualification.
++`Event.reconstruction` now includes hit composition as well as miss expansion. Full 2400-byte scratch is still cleared after every request. Persistent seed storage is unchanged. Secret core remains sensitive. No standard key length, security parameter or ciphertext is reduced.
+ 
+-The packed library already passed finite generated differential and selected official-vector tests. Actual linked artifact review and full harness functional checks remain necessary. Negative results and prior artifacts remain immutable.
++Independent placement and baseline-parity fixtures use identical changed geometry. Saturation tests fill residual space with secret entries before asserting lack of space; they must not assume the old allocation sizes. Public fake payloads only run on Mac. Native integrated crypto/lifecycle remains a separate gate, followed by fresh common calibration including hit composition and shorter copy/erase. Old cost coefficients are only finite functional inputs, never performance calibration for this source. No timing budget is spent by qualification.
+--- packed_controller/build.sh
++++ core_controller/build.sh
+@@ -8,7 +8,7 @@
+ mkdir -p build
+ parent=../zero_readback
+ vendor=../../vendor/mlkem-native
+-common=../packed_public_matrix
++common=../vector_public_matrix
+ manifest="$PWD/$common/backend.sha256"
+ library="$common/build/libpublic_matrix.a"
+ (cd "$vendor" && sha256sum -c "$manifest") > build/backend_verification.log
+--- packed_controller/fixtures/admission_metadata.c
++++ core_controller/fixtures/admission_metadata.c
+@@ -56,7 +56,7 @@
+  for(unsigned i=0;i<c->prefix_units;i++)occupied[i]=1;
+  for(unsigned i=0;i<r->n;i++)if(!contains(ids,n,i))for(unsigned j=0;j<r->o[i].span;j++)occupied[r->o[i].off+j]=1;
+  for(unsigned t=0;t<2;t++){
+-  place[t]=0;if(!(mask&(1u<<t)))continue;unsigned need=t?77:112;
++  place[t]=0;if(!(mask&(1u<<t)))continue;unsigned need=t?38:112;
+   for(unsigned start=c->prefix_units;start+need<=end;start++){
+    unsigned free=1;for(unsigned j=0;j<need;j++)if(occupied[start+j]){free=0;break;}
+    if(free){place[t]=start;for(unsigned j=0;j<need;j++)occupied[start+j]=1;break;}
+@@ -71,7 +71,7 @@
+  if(fabs(delta)>1e-8)return delta>0;
+  int64_t net[2][2]={{0}};const JointPlan*p[2]={a,b};
+  for(unsigned j=0;j<2;j++){
+-  net[j][0]=(p[j]->mask&2)?2464:0;net[j][1]=net[j][0]+((p[j]->mask&1)?3584:0);
++  net[j][0]=(p[j]->mask&2)?1216:0;net[j][1]=net[j][0]+((p[j]->mask&1)?3584:0);
+   for(unsigned i=0;i<p[j]->evict_count;i++){int at=locate(r,p[j]->evict[i]);T(at>=0);net[j][1]-=r->o[at].span*32;if(r->o[at].type)net[j][0]-=r->o[at].span*32;}
+  }
+  return net[0][0]<net[1][0]||(net[0][0]==net[1][0]&&(net[0][1]<net[1][1]||(net[0][1]==net[1][1]&&a->mask<b->mask)));
+@@ -190,7 +190,7 @@
+  for(unsigned i=0;i<sizeof(scratch);i++)T(!((unsigned char*)&scratch)[i]);
+  T(jc_check(c));if(link_steps)searches++;if(!p.mask)rejections++;return p;
+ }
+-static void publish(JointCache*c,unsigned key){for(unsigned t=0;t<2;t++){void*p=jc_pending(c,key,t);if(p){memset(p,0x51,t?2400:3520);T(jc_publish(c,key,t)==0);}}}
++static void publish(JointCache*c,unsigned key){for(unsigned t=0;t<2;t++){void*p=jc_pending(c,key,t);if(p){memset(p,0x51,t?1152:3520);T(jc_publish(c,key,t)==0);}}}
+ static void force(JointCache*c,unsigned key,unsigned mask,uint64_t now,int ready){
+  JointPlan p={0};p.context=key;p.mask=mask;p.clock_ns=now;p.sequence=c->seq;p.revision=c->revision;int need=-1;
+  T(try_place(c,&p,&need));T(jc_commit(c,&p,now)==0);if(ready)publish(c,key);
+@@ -249,14 +249,14 @@
+  /* Conditional S cannot create victims when an existing requested P is
+   * pinned and its arena has no S-sized hole; unrestricted joint search can. */
+  for(unsigned mi=0;mi<2;mi++){
+-  c=init(mi?7:15,32768,0);for(unsigned k=0;k<64&&c->bytes-c->used>=3584;k++)force(c,k,1,100,1);T(c->bytes-c->used<2464);
++  c=init(mi?7:15,32768,0);for(unsigned k=0;k<64&&c->bytes-c->used>=3584;k++)force(c,k,1,100,1);for(unsigned k=60;k<64&&c->bytes-c->used>=1216;k++)force(c,k,2,100,1);T(c->bytes-c->used<1216);
+   jc_observe(c,0,200,200);jc_observe(c,0,50200,50200);
+   p=check_plan(c,0,50200);
+   if(mi)T(p.mask==2&&p.evict_count>0);else T(!p.mask&&!p.evict_count&&!link_steps&&placement_probes==1);
+   jc_clear_all(c,50200);targets++;
+  }
+  /* Aggregate free-space rejection occurs before forecast or allocation. */
+- c=init(31,32768,0);for(unsigned k=0;k<64&&c->bytes-c->used>=3584;k++)force(c,k,1,100,1);T(c->bytes-c->used<2464);
++ c=init(31,32768,0);for(unsigned k=0;k<64&&c->bytes-c->used>=3584;k++)force(c,k,1,100,1);for(unsigned k=60;k<64&&c->bytes-c->used>=1216;k++)force(c,k,2,100,1);T(c->bytes-c->used<1216);
+  jc_observe(c,0,200,200);jc_observe(c,0,50200,50200);
+  uint64_t before_forecast=scar_state(c)->stats.forecast_contexts;
+  p=check_plan(c,0,50200);T(!p.mask&&!link_steps&&!placement_probes);
+@@ -275,4 +275,4 @@
+  JointRetirePlan rp;T(jc_retire_plan(c,150100,&rp,&scratch,sizeof(scratch))==0&&!rp.considered&&!rp.mask);T(jc_retire_commit(c,&rp,150100)==-1);targets++;
+  jc_clear_all(c,150100);T(jc_check(c));
+ }
+-int main(void){targeted_checks();stream_checks();T(searches>0&&rejections>0&&exact_parity>0&&pruned_probes>0);printf("exact_action_arena_parity=%lu skipped_placement_probes=%lu\n",exact_parity,pruned_probes);printf("admission_metadata_pass=1 streams=%lu request_events=%lu targeted=%lu checks=%lu searched=%lu bypassed=%lu crypto_linked=0 timing_endpoints=0\n",streams,events,targets,checks,searches,rejections);return 0;}
++int main(void){T(38u*32u==64u+1152u&&112u*32u==64u+3520u);targeted_checks();stream_checks();T(searches>0&&rejections>0&&exact_parity>0&&pruned_probes>0);printf("exact_action_arena_parity=%lu skipped_placement_probes=%lu\n",exact_parity,pruned_probes);printf("admission_metadata_pass=1 streams=%lu request_events=%lu targeted=%lu checks=%lu searched=%lu bypassed=%lu crypto_linked=0 timing_endpoints=0\n",streams,events,targets,checks,searches,rejections);return 0;}
+--- packed_controller/fixtures/control_parity.c
++++ core_controller/fixtures/control_parity.c
+@@ -32,7 +32,7 @@
+    T(!memcmp(x.evict,y.evict,sizeof(x.evict))&&!memcmp(x.place,y.place,sizeof(x.place)));
+    T(x.sequence==y.sequence&&x.revision==y.revision&&x.clock_ns==y.clock_ns&&x.context==y.context);
+    T(jc_commit(c,&x,now)==parent_jc_commit(r,&y,now));
+-   for(unsigned t=0;t<2;t++){void*u=jc_pending(c,key,t),*v=parent_jc_pending(r,key,t);T((u!=NULL)==(v!=NULL));if(u){memset(u,0x42,t?2400:3520);memset(v,0x42,t?2400:3520);T(jc_publish(c,key,t)==parent_jc_publish(r,key,t));}}
++   for(unsigned t=0;t<2;t++){void*u=jc_pending(c,key,t),*v=parent_jc_pending(r,key,t);T((u!=NULL)==(v!=NULL));if(u){memset(u,0x42,t?1152:3520);memset(v,0x42,t?1152:3520);T(jc_publish(c,key,t)==parent_jc_publish(r,key,t));}}
+    if(j%61==0){uint64_t gen=jc_generation(c,key)+1;T(jc_rotate(c,key,gen,now)==parent_jc_rotate(r,key,gen,now));}
+    T(jc_check(c)&&parent_jc_check(r));T(!memcmp(a,b,bytes));events++;
+   }
+--- packed_controller/fixtures/parent_impl.c
++++ core_controller/fixtures/parent_impl.c
+@@ -1,5 +1,5 @@
+ /* The exact reviewed sieve_controller parent is compiled in a separate namespace.
+- * Only the public-record geometry is changed in the separately pinned reference.
++ * Only the public-record and secret-core geometry is changed in the separately pinned reference.
+  * The comparison tests baseline policy preservation at identical packed geometry. */
+ #define jc_init parent_jc_init
+ #define jc_policy_name parent_jc_policy_name
+--- packed_controller/fixtures/reference/joint_controller.c
++++ core_controller/fixtures/reference/joint_controller.c
+@@ -13,7 +13,7 @@
+ #define ROUND(n) (((n)+31u)&~31u)
+ #define MAX_BITMAP 256u
+ #define PUBLIC_BYTES 3520u
+-#define SECRET_BYTES 2400u
++#define SECRET_BYTES 1152u
+ #define READY 1u
+ #define PENDING 2u
+ 
+--- packed_controller/fixtures/sieve_metadata.c
++++ core_controller/fixtures/sieve_metadata.c
+@@ -42,7 +42,7 @@
+ static JointCache*init(Model*m,JointPolicy policy,unsigned bytes){
+  JointConfig cfg={.arena_bytes=bytes,.contexts=64,.history_capacity=1000,.components=31,.policy=policy,.ttl_ns=10000,.guard_ns=500,.horizon_ns=10000,.public_seed=1,.costs={{30000,26000,20000,15000},-100,50,200,100}};
+  memset(m,0,sizeof(*m));m->hand=-1;JointCache*c=jc_init(arena,bytes,&cfg);T(c!=NULL);T(jc_check(c));
+- JointStats st=jc_stats(c);T(st.policy_bytes==32&&st.history_bytes==0);T(jc_header_bytes()==352);T(jc_entry_bytes(0)==3584&&jc_entry_bytes(1)==2464);return c;
++ JointStats st=jc_stats(c);T(st.policy_bytes==32&&st.history_bytes==0);T(jc_header_bytes()==352);T(jc_entry_bytes(0)==3584&&jc_entry_bytes(1)==1216);return c;
+ }
+ /* Separate one-bit first-fit reference, including complete byte occupancy and
+  * protected PENDING objects. No production placement helper is called. */
+@@ -53,11 +53,11 @@
+   const Obj*o=m->objects+i;by_type[o->id%2]+=(uint64_t)o->span*32;
+   for(unsigned j=o->off;j<o->off+o->span;j++)occupied[j]=1;
+  }
+- for(unsigned t=0;t<2;t++)if(mask&(1u<<t))by_type[t]+=t?2464:3584;
++ for(unsigned t=0;t<2;t++)if(mask&(1u<<t))by_type[t]+=t?1216:3584;
+  uint64_t quota=c->bytes-(uint64_t)c->prefix_units*32;
+  for(unsigned t=0;t<2;t++)if(by_type[t]>(t&&c->cfg.policy==JC_PUBLIC_SIEVE?0:quota)){*need=(int)t;return 0;}
+  for(unsigned t=0;t<2;t++){
+-  places[t]=0;if(!(mask&(1u<<t)))continue;unsigned span=t?77:112,run=0;
++  places[t]=0;if(!(mask&(1u<<t)))continue;unsigned span=t?38:112,run=0;
+   for(unsigned i=c->prefix_units;i<end;i++){
+    run=occupied[i]?0:run+1;if(run==span){places[t]=i+1-span;break;}
+   }
+@@ -86,8 +86,8 @@
+  if(placed&&missing){
+   for(unsigned i=0;i<nv;i++)model_remove(m,victims[i]);
+   for(unsigned t=0;t<2;t++)if(missing&(1u<<t)){
+-   model_insert(m,(int)(2*key+t),places[t],t?77:112,now);
+-   void*payload=jc_pending(c,key,t);T(payload);memset(payload,0xa5,t?2400:3520);
++   model_insert(m,(int)(2*key+t),places[t],t?38:112,now);
++   void*payload=jc_pending(c,key,t);T(payload);memset(payload,0xa5,t?1152:3520);
+    if(publish){T(jc_publish(c,key,t)==0);m->objects[position(m,(int)(2*key+t))].ready=1;}
+   }
+  }
+@@ -152,7 +152,7 @@
+  /* Fill capacity with PENDING objects: replacement cannot free them. A failed
+   * admission returns a no-change plan while preserving queue/index validity. */
+  c=init(&m,JC_SIEVE,32768);for(unsigned k=0;k<8;k++)request(c,&m,k,k+1,0);
+- T(m.n==2*((32768-(uint64_t)c->prefix_units*32)/(3584+2464)));T(c->bytes-c->used<3584+2464);unsigned entries_before=m.n;request(c,&m,40,10,1);T(m.n==entries_before);targets++;
++ T(m.n==2*((32768-(uint64_t)c->prefix_units*32)/(3584+1216)));T(c->bytes-c->used<3584+1216);unsigned entries_before=m.n;request(c,&m,40,10,1);T(m.n==entries_before);targets++;
+  jc_clear_all(c,20);m.n=0;m.hand=-1;compare(c,&m);
+  /* Queue completion covers explicit head/tail deletion and singleton cleanup. */
+  c=init(&m,JC_PUBLIC_SIEVE,32768);request(c,&m,0,1,1);request(c,&m,1,2,1);request(c,&m,2,3,1);
+--- packed_controller/joint_controller.c
++++ core_controller/joint_controller.c
+@@ -13,7 +13,7 @@
+ #define ROUND(n) (((n)+31u)&~31u)
+ #define MAX_BITMAP 256u
+ #define PUBLIC_BYTES 3520u
+-#define SECRET_BYTES 2400u
++#define SECRET_BYTES 1152u
+ #define READY 1u
+ #define PENDING 2u
+ 
+--- packed_controller/joint_harness.c
++++ core_controller/joint_harness.c
+@@ -24,6 +24,7 @@
+ #include "mlkem_native.h"
+ #include "assisted_expansion.h"
+ #include "public_matrix.h"
++#include "secret_core.h"
+ #include "joint_controller.h"
+ 
+ #define CHECK(x) do { if(!(x)){fprintf(stderr,"joint_harness_failed:%s:%d errno=%d\n",#x,__LINE__,errno);exit(1);} }while(0)
+@@ -172,17 +173,22 @@
+  b=now();(void)drain_ready_secrets();e->expiry+=now()-b;
+  b=now();s=jc_lookup(cache,e->key,JC_SECRET,b);e->lookup+=now()-b;
+  e->secret_hit=s!=NULL;
+- if(!s){
+-  b=now();scar_assisted_expand(work->sk,keys[e->key].seed,&keys[e->key].public,1);
+-  e->reconstruction=now()-b;s=work->sk;
+- }
++ /* A retained S is dkPKE only. Assemble the complete standard key from
++  * the same context's immutable enrollment into locked operation scratch.
++  * reconstruction includes this hit composition as well as miss expansion. */
++ b=now();
++ if(s){
++  CHECK(scar_secret_compose(work->sk,2400,s,1152,keys[e->key].public.ek,1184,
++          keys[e->key].public.h_ek,32,keys[e->key].seed+32,32)==0);
++ } else scar_assisted_expand(work->sk,keys[e->key].seed,&keys[e->key].public,1);
++ e->reconstruction=now()-b;s=work->sk;
+  int used=-1;b=now();
+  int result=scar_public_dec(work->out,32,fixtures[e->fixture].ct,1088,s,2400,p,generation,&used);
+  e->decapsulation=now()-b;
+  e->success=result==0&&used==(p!=NULL)&&!memcmp(work->out,fixtures[e->fixture].ss,32);
+  CHECK(e->success);
+  if(pending_secret){
+-  CHECK(!e->secret_hit);b=now();memcpy(pending_secret,work->sk,2400);e->secret_copy=now()-b;
++  CHECK(!e->secret_hit);b=now();CHECK(scar_secret_extract(pending_secret,1152,work->sk,2400)==0);e->secret_copy=now()-b;
+  }
+  b=now();
+  /* Publication follows complete construction/copy. No interleaved borrower or
+@@ -264,7 +270,7 @@
+  cache_memory=locked_map(cache_map);
+  CHECK(((uintptr_t)cache_memory%32)==0);
+  CHECK(scar_public_record_bytes()==3520&&scar_public_alignment()==32);
+- CHECK(jc_entry_bytes(JC_PUBLIC)==3584&&jc_entry_bytes(JC_SECRET)==2464);
++ CHECK(jc_entry_bytes(JC_PUBLIC)==3584&&jc_entry_bytes(JC_SECRET)==1216);
+  cache=jc_init(cache_memory,cache_map,&cfg);CHECK(cache&&jc_check(cache));
+  causal_policy=cfg.policy==JC_SCAR;
+  JointScarSettings scar_settings={0};
+--- packed_controller/verify_dependencies.py
++++ core_controller/verify_dependencies.py
+@@ -1,37 +1,28 @@
+ #!/usr/bin/env python3
+-"""Read-only integrity checks; no compilation, controller or experiment run."""
+-import hashlib
+-import json
++"""Read-only source lineage and exact integration checks."""
+ from pathlib import Path
+-HERE = Path(__file__).resolve().parent
+-DEPENDENCIES = {
+- 'feasibility_pruning': '4b4e31a4b32239399ceeaa4bf94054fe87e41ab68496d73b99c1739c4891f224',
+- 'dominance_pruning': '10e7d1abb25a80475650436db018679c8ee4544c7f424c8bcb554cad8db2d745',
+- 'conditional_admission': 'd8c84873be57d8fc0f44c33acb1d8a09739bd467fbaab20c11b690945b383a89',
+- 'bounded_admission': 'd4f1603e3c8e04243c2cbfa0554ce4a1ccb03b283b75cb75968d69fe8aa01138',
+- 'sieve_controller': '40f1d48a9f5a704361fe2ba8d39b050848d59e14bb340532f245d22cdec8f768',
+- 'zero_readback': '308f4de83702a5cc839eeaccf3a48b1cd07bcca2330421d91ae26f7190ea3676',
+- 'deadline_drain': '09b2716cd4f4580a37ffe72f112bb4b2d3070de59a5f9036554208c685ca09e3',
+-}
+-def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
++import hashlib,json,subprocess,sys
++HERE=Path(__file__).resolve().parent
++H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ def verify():
+- for name, expected in DEPENDENCIES.items():
+-  root=HERE.parent/name
+-  path=root/'source_manifest.json'
+-  if digest(path)!=expected: raise RuntimeError('Dependency manifest changed: '+name)
+-  files=json.loads(path.read_text())['files']
+-  for rel, wanted in files.items():
+-   if digest(root/rel)!=wanted: raise RuntimeError('Dependency changed: '+name+'/'+rel)
+-  print('dependency='+name+' files='+str(len(files))+' verified=1')
+- parent=HERE.parent/'feasibility_pruning'
+- for name in ['joint_controller.c','joint_controller.h','causal_policy.inc','joint_harness.c','deadline_wait.inc','joint_trace.c']:
+-  text=(parent/name).read_text()
+-  if name=='joint_controller.c':text=text.replace('#define PUBLIC_BYTES 4672u','#define PUBLIC_BYTES 3520u')
+-  if name=='joint_harness.c':text=text.replace('scar_public_record_bytes()==4672','scar_public_record_bytes()==3520').replace('jc_entry_bytes(JC_PUBLIC)==4736','jc_entry_bytes(JC_PUBLIC)==3584')
+-  if (HERE/name).read_text()!=text:raise RuntimeError('Unexpected integration change: '+name)
+- for name in ['joint_controller.c','joint_controller.h']:
+-  text=(HERE.parent/'sieve_controller'/name).read_text()
+-  if name=='joint_controller.c':text=text.replace('#define PUBLIC_BYTES 4672u','#define PUBLIC_BYTES 3520u')
+-  if (HERE/'fixtures/reference'/name).read_text()!=text:raise RuntimeError('Unexpected reference geometry change: '+name)
+- print('geometry_only_integration=1 reference_geometry_only=1')
++ parent=HERE.parent/'packed_controller'
++ assert H(parent/'source_manifest.json')=='7f9b527d20131a1e1421f7ac0d5f74130eed49472dcf498610a5c1030c90cc10'
++ m=json.loads((parent/'source_manifest.json').read_text())
++ assert all(H(parent/n)==h for n,h in m['files'].items())
++ subprocess.run([sys.executable,str(parent/'verify_dependencies.py')],check=True)
++ own=json.loads((HERE/'source_manifest.json').read_text())
++ assert all(H(HERE/n)==h for n,h in own['files'].items())
++ for package,filename,expected in own['qualified_dependencies']:
++  root=HERE.parents[2]
++  p=root/filename
++  assert H(p)==expected,package
++  f=json.loads(p.read_text())
++  for group in ['files','parent_files']:
++   assert all(H(root/n)==h for n,h in f.get(group,{}).items()),package
++ assert (HERE/'secret_core.h').read_bytes()==(HERE.parent/'secret_core/secret_core.h').read_bytes()
++ for name in ['joint_controller.h','causal_policy.inc','deadline_wait.inc','joint_trace.c','public_matrix.h']:
++  assert (HERE/name).read_bytes()==(parent/name).read_bytes(),name
++ for name in ['joint_controller.c','fixtures/reference/joint_controller.c']:
++  assert (HERE/name).read_text()==(parent/name).read_text().replace('#define SECRET_BYTES 2400u','#define SECRET_BYTES 1152u'),name
++ print('pinned_integration_verified=1 policies_unchanged=1 secret_core_bytes=1152')
+ if __name__=='__main__':verify()

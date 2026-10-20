@@ -1,0 +1,43 @@
+{
+  "failure_receipt_path": "Reports/CoreController/LocalQualification/3a2e4f726e0ff667/failure_receipt.json",
+  "failure_receipt_sha256": "dd150a2ff6a6266a34e9c0368d699ac4fcb18883703cf540422a89e63874e1b0",
+  "files": {
+    "README.md": "15ddbd2198629879156701cb66e8a94da847c5652dd349f6400f619ea9aedd87",
+    "build.sh": "ad3f12a23ec93b141358b18266aa6c5e71a302b176615f3f4c31ac75b793855f",
+    "build_fixture.sh": "533b0e04803cab402d9975707c18b899fb16207dcada495c4a829f16a877bc51",
+    "causal_policy.inc": "f593e2535f14f5be2a7aeced3464fea76a243e8bb2493aa28fb15b90c576d1e1",
+    "deadline_wait.inc": "c23832721d0830eebd3af431341240de48dfb535312b8ade72bbade9be5f9ad6",
+    "fixtures/admission_metadata.c": "399edc53a405ebfdd9fe58a1f1763af998b8fee24a38532b92bdb5915bc5ba18",
+    "fixtures/control_parity.c": "5bd34ef453c1c4f375485d56ed90631a516a66bead56ddb0c3a4878099c71e7f",
+    "fixtures/parent_impl.c": "60432c997142bc81a2684f3825ba1513fc479ff81f7ecde4511ef928500060fa",
+    "fixtures/reference/joint_controller.c": "51d5c1ca751f1a85556d2c56112787a2173ef25d2beee7c517b4788f8726cb1a",
+    "fixtures/reference/joint_controller.h": "2c804dfb500ff06283b36fa18d9a47c4d9557a4834eb2adf14968f3daa023161",
+    "fixtures/sieve_metadata.c": "d45f574cc3155a46ad5240fc52fcaa9722baf2d6ee89f651c0baf4c3b0508fff",
+    "integration.patch": "18c780c1a0918a3f9064f2bdd716414dad3bd9edd8424d4c81ff6d53222f58cf",
+    "joint_controller.c": "2f844516ecff69145ebe439153f951d29d5da9eb7ab408dc446a8334d5f710bb",
+    "joint_controller.h": "69fcac2a5a6cd15b00c4281f2a579a33089a4d9df4c4245ef7f9ccf283dd55e4",
+    "joint_harness.c": "d472a3f7c5a23ecbff39cef03b879cc22d073a9fcd8077cf0ac4b0df83d65e3a",
+    "joint_trace.c": "ea7a376b1445d7a084232499da8ccd68a91b54ced50e3974f69832319a510f87",
+    "public_matrix.h": "fd4f2a12835fbcc70b6c7258365f7f6f3c3da8bbde3029de404275e130bacaea",
+    "secret_core.h": "7b42c539965ae4cf6186c3e95d77712be8709ac7f24b6e2a0513a3d7ebd19292",
+    "verify_dependencies.py": "91ee72636d787806a10ca47b01225749caed1d0de99f660985df88634b372f01"
+  },
+  "goal_achieved": false,
+  "new_native_timing_processes": 0,
+  "parent_manifest_sha256": "7f9b527d20131a1e1421f7ac0d5f74130eed49472dcf498610a5c1030c90cc10",
+  "prior_failed_source_sha256": "3a2e4f726e0ff667d513200fb9cad6ed910d43a6beec812b05a01f76b5d9f269",
+  "qualified_dependencies": [
+    [
+      "VectorPublicMatrix",
+      "Manifests/VectorPublicMatrix/Qualification/source_freeze.json",
+      "61cff8bdce298e43f691bb537aa109c027bf128fed5e57eda3dc87e2897cef7b"
+    ],
+    [
+      "SecretCore",
+      "Manifests/SecretCore/Qualification/source_freeze.json",
+      "262c26eea303c63d8e7cf6b0f9998e3924c90ed49fe224a3c38bd943bd294796"
+    ]
+  ],
+  "schema": "core_controller_source",
+  "shared_library_sha256": "18fdab47121f1e9955f8e0e31f2692b5aa502b8a853edac75f7d1ed31004788f"
+}

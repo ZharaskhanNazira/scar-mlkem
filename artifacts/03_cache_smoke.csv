@@ -1,0 +1,8 @@
+Policy,Requests,Successful,Hits,Maximum_active_cache_bytes
+seed_only,500,500,0,0
+fixed_ttl,500,500,0,38400
+lru,500,500,0,38400
+lfu,500,500,0,38400
+frequency,500,500,209,38400
+ewma,500,500,209,38400
+logistic,500,500,242,38400

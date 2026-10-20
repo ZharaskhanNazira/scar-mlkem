@@ -1,0 +1,1 @@
+session=development_bursty_2 policy=tiny_lfu workload=bursty seed=200302 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9859276 summed_residency_ns=1360548664 cache_zeroizations=141 late_clear_count=0 max_lateness_ns=0 rejected_admissions=0 secrets_mlocked_bytes=1749152 peak_rss_bytes=3178496 cpu=2

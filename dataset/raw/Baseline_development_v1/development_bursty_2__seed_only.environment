@@ -1,0 +1,8 @@
+before
+throttled=0x0
+2400000
+50150
+after
+throttled=0x0
+2400000
+49050

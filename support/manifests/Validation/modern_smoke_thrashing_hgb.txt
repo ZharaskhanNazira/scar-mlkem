@@ -1,0 +1,1 @@
+session=modern_smoke_thrashing_hgb policy=hgb workload=thrashing seed=7781 requests=500 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9855030 summed_residency_ns=2219075492 cache_zeroizations=232 late_clear_count=0 max_lateness_ns=0 rejected_admissions=45 secrets_mlocked_bytes=1189152 peak_rss_bytes=5718016 cpu=2

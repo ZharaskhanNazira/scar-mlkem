@@ -1,0 +1,2 @@
+perf_open_errno=0 frequency_temperature_sampling_every_requests=64
+session=train_thrashing_5 split=train workload=thrashing workload_seed=100705 keys=64 requests=1000 scheduled_mean_interval_us=500.000 cpu=2 secrets_mlocked_bytes=1441952 dumpable=0 utc_anchor=1792327778.222987424 monotonic_start_ns=9848109551640 minor_faults=226 major_faults=0 voluntary_cs=1000 involuntary_cs=4

@@ -1,0 +1,3 @@
+Model,Rows,Maximum_absolute_difference,Mean_absolute_difference,Passed
+RF,25610,3.3306690738754696e-16,1.3547235267292519e-18,True
+HGB,25610,1.1102230246251565e-16,7.894244934956696e-18,True

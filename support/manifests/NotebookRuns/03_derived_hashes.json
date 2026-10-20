@@ -1,0 +1,8 @@
+{
+  "Dataset/Interim/baseline_native_events.parquet": "5b34d4719449efc52a914f61d3120bfc08342d8027920ab4f73d28d15e386d35",
+  "Dataset/Interim/baseline_native_session_metrics.csv": "23f02fc66c39849572dc00cbaa9825e858ed8632d3d06c52062e1d668da87d8c",
+  "Artifacts/Models/logistic.json": "88c54161a2ffc7851e95669558c10a841720ca93fd9299582b9a5e02127930d5",
+  "Artifacts/Models/logistic.joblib": "0291e2008cad9a5ddcd4ef0a539eb28b2b5d2a15dd34cd039b9f8d973fd5eb39",
+  "Artifacts/Models/baseline_oof.parquet": "ecc739f426723b8e02c5333440ecf35d173d34dd6c8ee4f4723e3b8f49009704",
+  "Artifacts/Models/baseline_development_predictions.parquet": "22bdca9ffa0567bf3f4891a22d589e80e4114780180845e146cfad4472ca5f00"
+}

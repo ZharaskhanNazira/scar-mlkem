@@ -1,0 +1,47 @@
+{
+  "binary_sha256": "4117a3d26727b1a64612720c3a68bd61df219e4355fbed8787dcf8b63bafdfe9",
+  "causal_historical_comparison": false,
+  "closure_sha256": "d8a525f863b1035cd725e018df5818546749654017e3ea1ec56d904bab5f4f15",
+  "coefficient_use_eligible": true,
+  "contexts_per_process": 12,
+  "costs_ns": {
+    "C00": 31826.85166666667,
+    "C01": 28780.332083333335,
+    "C10": 22766.026249999995,
+    "C11": 19721.5975,
+    "addP": 1118.8241666666672,
+    "addS": 361.53874999999994,
+    "eraseP": 584.9583333333333,
+    "eraseS": 409.91333333333336
+  },
+  "derived_files": {
+    "Reports/CoreCalibration/calibration8_20261019/all_context_measurements.csv": "90616e21dd71bae5c4f2d9756dad4b1c987f1e3497758bd583fddb1c5aa7a2a2",
+    "Reports/CoreCalibration/calibration8_20261019/process_costs_ns.csv": "d1f724f8dc6fd90c6a6ea44cb3aee59d9928d28088b639e754fb64ef963da23e"
+  },
+  "energy_measured": false,
+  "erasure_scope": "Payload explicit clear and complete OR readback, timer overhead retained; excludes controller metadata and lifecycle clock",
+  "estimator": "Median of eight context-equal process mean thread CPU costs; addP within-context signed paired difference, then process mean and median",
+  "independent_confirmation": false,
+  "inputs_sha256": {
+    "Dataset/Raw/PiExperiments/CoreCalibration/calibration8_20261019/done.json": "0451944f3e4a085967fdeccbad81c6ae23080814e19da98d9dfd556e3251f24b",
+    "Manifests/CoreCalibration/calibration8_20261019/notebook_source.json": "04bb396235113a9886a7a6f7cecfbc49b23b388e4b9e400e51d269f2b5886af2"
+  },
+  "library_sha256": "18fdab47121f1e9955f8e0e31f2692b5aa502b8a853edac75f7d1ed31004788f",
+  "negative_estimates": "Retained without clipping",
+  "performance_promotion_allowed": false,
+  "policy_TTL_test": false,
+  "policy_launch_authorized": false,
+  "primary_cost_clock": "CLOCK_THREAD_CPUTIME_ID",
+  "processes": 8,
+  "schema": "core_shared_cost_calibration_v1",
+  "shared_for_all_applicable_cost_policies": true,
+  "signed_avoided_costs_ns": {
+    "dI": -2.0908333333391056,
+    "dP": 9060.825416666674,
+    "dS": 3046.5195833333346
+  },
+  "source_manifest_sha256": "ba61d16db8171512ca978e282ce36d452952379f394157c2d935cdc51c60e82e",
+  "spec_sha256": "19835ea1c760b6db1a34495bb780499ae8ab2d6467ce791ae7dabe3bb6fd93a1",
+  "status": "complete_shared_development_inputs",
+  "timed_decapsulations": 57600
+}

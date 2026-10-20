@@ -1,0 +1,25 @@
+{
+  "gate_dir": "/home/research/Nazira_Crystals-Cyber/Dataset/Raw/PiExperiments/CoreCalibration/calibration8_20261019",
+  "gid": 1001,
+  "groups": [
+    4,
+    20,
+    27,
+    29,
+    44,
+    46,
+    100,
+    102,
+    986,
+    988,
+    989,
+    992,
+    996,
+    1001
+  ],
+  "pid": 108271,
+  "runner_sha256": "98e4a02ba2212771ae9a74419292a0c38a4a721d48cf9d3c88f8318f6cd57744",
+  "spec_sha256": "19835ea1c760b6db1a34495bb780499ae8ab2d6467ce791ae7dabe3bb6fd93a1",
+  "start_ticks": 10931434,
+  "uid": 1001
+}

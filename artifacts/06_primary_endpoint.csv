@@ -1,0 +1,2 @@
+Comparison,Sessions,Strata,Seed-only CPU (µs),SCAR-MLKEM CPU (µs),Absolute saving (µs),Absolute 95 % CI (µs),Relative saving (%),Relative 95 % CI (%),One-sided 95 % lower bound (%),Strata with positive mean saving,Sessions with positive saving
+SCAR-MLKEM vs seed-only reconstruction,120,20,38.177074575000006,33.67419760000001,4.502876975,"[4.454, 4.553]",11.794714563982538,"[11.671, 11.920]",11.68888558331098,16,99

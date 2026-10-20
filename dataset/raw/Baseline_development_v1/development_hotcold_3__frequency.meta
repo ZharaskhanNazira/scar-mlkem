@@ -1,0 +1,1 @@
+session=development_hotcold_3 policy=frequency workload=hotcold seed=200803 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9853824 summed_residency_ns=2724668821 cache_zeroizations=279 late_clear_count=0 max_lateness_ns=0 rejected_admissions=128 secrets_mlocked_bytes=1749152 peak_rss_bytes=5423104 cpu=2

@@ -1,0 +1,1 @@
+session=smoke_fixed_ttl policy=fixed_ttl workload=thrashing seed=7771 requests=500 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=8140890 summed_residency_ns=3971862756 cache_zeroizations=500 late_clear_count=0 max_lateness_ns=0 rejected_admissions=0 secrets_mlocked_bytes=1189152 peak_rss_bytes=6471680 cpu=2

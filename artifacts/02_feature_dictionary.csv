@@ -1,0 +1,12 @@
+feature,unit,maximum_history_ms
+c5,requests,50
+c10,requests,50
+c20,requests,50
+c50,requests,50
+gap50,ms,50
+gap_mean,ms,50
+gap_cv,ratio,50
+exp10,weighted requests,50
+share_shift,share difference,50
+rate5,requests/ms,50
+rate50,requests/ms,50

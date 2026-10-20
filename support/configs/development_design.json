@@ -1,0 +1,20 @@
+{
+  "design_version": "development-v1",
+  "registered_before_detailed_eda": "2026-10-18",
+  "families": ["uniform", "poisson", "zipf", "bursty", "periodic", "nonstationary", "abrupt", "thrashing", "hotcold", "varying_contexts"],
+  "training_sessions_per_family": 6,
+  "development_sessions_per_family": 3,
+  "reserved_test_sessions_per_family": 6,
+  "requests_per_session": 1000,
+  "base_interval_us": 500,
+  "key_contexts": 64,
+  "varying_contexts_max": 128,
+  "candidate_prediction_horizons_ms": [5, 10, 20],
+  "maximum_feature_history_ms": 50,
+  "initial_purge_embargo_ms": 70,
+  "candidate_cache_entries": [8, 16, 32],
+  "candidate_max_residency_ms": [5, 10, 20],
+  "seed_namespaces": {"pilot": 9000, "train": 100000, "development": 200000, "locked_test": 900000},
+  "test_generation_gate": "pipeline_freeze_manifest_required",
+  "notes": "Controlled request schedules, not production key-access traces. Key IDs are permuted per session. Live cryptographic seeds use getrandom and are never persisted. Family names and key identity are excluded from learned features. Initial scalar choices are candidates, not test-tuned values."
+}

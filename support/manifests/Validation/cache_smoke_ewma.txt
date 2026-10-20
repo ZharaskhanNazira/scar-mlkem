@@ -1,0 +1,1 @@
+session=smoke_ewma policy=ewma workload=thrashing seed=7771 requests=500 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9860407 summed_residency_ns=2132459562 cache_zeroizations=223 late_clear_count=0 max_lateness_ns=0 rejected_admissions=68 secrets_mlocked_bytes=1189152 peak_rss_bytes=6471680 cpu=2

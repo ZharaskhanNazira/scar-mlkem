@@ -1,0 +1,1653 @@
+{
+  "binary": "Native/Development/core_controller/build/scar_mlkem",
+  "binary_sha256": "d1042601978864a8b7be212dfb6a304112980a235ceb80569081542d597c638b",
+  "campaign": "Supplementary06",
+  "contexts": 64,
+  "cooldown_seconds": 0.3,
+  "cost_names": [
+    "C00",
+    "C01",
+    "C10",
+    "C11",
+    "addP",
+    "addS",
+    "eraseP",
+    "eraseS"
+  ],
+  "costs_ns": {
+    "C00": 31826.85166666667,
+    "C01": 28780.332083333335,
+    "C10": 22766.026249999995,
+    "C11": 19721.5975,
+    "addP": 1118.8241666666672,
+    "addS": 361.53874999999994,
+    "eraseP": 584.9583333333333,
+    "eraseS": 409.91333333333336
+  },
+  "cpu": 2,
+  "drift": 1,
+  "governor": "performance",
+  "guard_us": 500,
+  "history_capacity": 1000,
+  "horizon_ms": 10,
+  "identity": "realtime_20261020",
+  "interval_us": 500,
+  "library": "Native/Development/vector_public_matrix/build/libpublic_matrix.a",
+  "library_sha256": "18fdab47121f1e9955f8e0e31f2692b5aa502b8a853edac75f7d1ed31004788f",
+  "plan": [
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7400000,
+      "session_id": "test_uniform_7400000_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "sieve",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "lecar",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "tiny",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "uniform",
+      "policy": "scar",
+      "seed": 7400001,
+      "session_id": "test_uniform_7400001_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7400010,
+      "session_id": "test_poisson_7400010_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "sieve",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "lecar",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "tiny",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "poisson",
+      "policy": "scar",
+      "seed": 7400011,
+      "session_id": "test_poisson_7400011_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7400020,
+      "session_id": "test_zipf_7400020_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "sieve",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "lecar",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "tiny",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "zipf",
+      "policy": "scar",
+      "seed": 7400021,
+      "session_id": "test_zipf_7400021_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7400030,
+      "session_id": "test_bursty_7400030_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "sieve",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "lecar",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "tiny",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "bursty",
+      "policy": "scar",
+      "seed": 7400031,
+      "session_id": "test_bursty_7400031_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7400040,
+      "session_id": "test_periodic_7400040_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "sieve",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "lecar",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "tiny",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "periodic",
+      "policy": "scar",
+      "seed": 7400041,
+      "session_id": "test_periodic_7400041_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7400050,
+      "session_id": "test_nonstationary_7400050_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "sieve",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "lecar",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "tiny",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "nonstationary",
+      "policy": "scar",
+      "seed": 7400051,
+      "session_id": "test_nonstationary_7400051_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7400060,
+      "session_id": "test_abrupt_7400060_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "sieve",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "lecar",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "tiny",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "abrupt",
+      "policy": "scar",
+      "seed": 7400061,
+      "session_id": "test_abrupt_7400061_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7400070,
+      "session_id": "test_thrashing_7400070_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "sieve",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "lecar",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "tiny",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "thrashing",
+      "policy": "scar",
+      "seed": 7400071,
+      "session_id": "test_thrashing_7400071_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7400080,
+      "session_id": "test_hotcold_7400080_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "sieve",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "lecar",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "tiny",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "hotcold",
+      "policy": "scar",
+      "seed": 7400081,
+      "session_id": "test_hotcold_7400081_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7400090,
+      "session_id": "test_varying_contexts_7400090_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_32k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_32k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_32k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 32768,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_32k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "sieve",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_64k_sieve",
+      "setting": "sieve",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "lecar",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_64k_lecar",
+      "setting": "lecar",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "tiny",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_64k_tiny",
+      "setting": "tiny",
+      "ttl_ms": 10
+    },
+    {
+      "arena_bytes": 65536,
+      "components": 31,
+      "family": "varying_contexts",
+      "policy": "scar",
+      "seed": 7400091,
+      "session_id": "test_varying_contexts_7400091_64k_scar",
+      "setting": "scar",
+      "ttl_ms": 10
+    }
+  ],
+  "purpose": "SCHED_FIFO priority 10 for the responder",
+  "raw_dir": "Dataset/Raw/PiExperiments/Supplementary06/realtime_20261020",
+  "remote_root": "/home/research/Nazira_Crystals-Cyber",
+  "requests": 1000,
+  "scar": {
+    "k": 0,
+    "margin": 0,
+    "nu": 2
+  },
+  "schema": "scar_mlkem_campaign_v2",
+  "source_manifest_sha256": "9e7b1dd972cc35863792ad8fb46bf02cc1b646748f0ec203c0021f252f0783b2",
+  "split": "test",
+  "timeout_seconds": 120,
+  "worker_sha256": "5c2e0e8b6374021e0d4ce24d69a346a85d35aa45f6b69d5b3f6cd6c83dced0bb"
+}

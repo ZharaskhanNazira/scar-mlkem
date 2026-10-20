@@ -1,0 +1,25 @@
+{
+  "gate_dir": "/home/research/Nazira_Crystals-Cyber/Dataset/Raw/PiExperiments/CoreControllerDevelopment/screen40_9e7b1dd9_3628019",
+  "gid": 1001,
+  "groups": [
+    4,
+    20,
+    27,
+    29,
+    44,
+    46,
+    100,
+    102,
+    986,
+    988,
+    989,
+    992,
+    996,
+    1001
+  ],
+  "pid": 108326,
+  "runner_sha256": "098330dfb64c826e471ba46f84a722b67b9ef82d3433885849e0e3233b1d83a4",
+  "spec_sha256": "a0dbd3c9d19ecc8716647af1f34bf9f1551723f6ce628f869a45a1204109215a",
+  "start_ticks": 10983086,
+  "uid": 1001
+}

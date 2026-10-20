@@ -1,0 +1,2 @@
+policy_support_selftest=passed
+rf_parameter_bytes=1075136 hgb_parameter_bytes=134208 tiny_sketch_reserved_bytes=4620 lecar_history_reserved_bytes=6144

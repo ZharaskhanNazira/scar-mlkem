@@ -1,0 +1,5 @@
+{
+  "before": "ondemand",
+  "during": "performance",
+  "restored": "ondemand"
+}

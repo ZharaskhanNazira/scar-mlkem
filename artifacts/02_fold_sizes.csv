@@ -1,0 +1,7 @@
+fold,role,rows,sessions
+1,train,11791,60
+1,validation,5879,60
+2,train,23697,60
+2,validation,5906,60
+3,train,35711,60
+3,validation,5923,60

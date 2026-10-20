@@ -1,0 +1,99 @@
+{
+  "authority_files": {
+    "Dataset/Raw/PiExperiments/CoreControllerFunctional/functional48_9e7b1dd9_3518000/done.json": "f953ee93458f8bfb96224c00c29d2395384dfbe83cd04fd22d877675efdfec88",
+    "Manifests/CoreCalibration/calibration8_20261019/notebook_source.json": "04bb396235113a9886a7a6f7cecfbc49b23b388e4b9e400e51d269f2b5886af2",
+    "Manifests/CoreCalibration/calibration8_20261019/protocol.md": "0413d6ae1592f6f9c0ac1f0205f76e4488c81c40eb05158d85a9d87a4778ba50",
+    "Manifests/CoreCalibration/calibration8_20261019/runner_review.json": "79b81dd8b35cc62af8ad3ca20f66fdf4bc47fa38e5e03e0dbcef6f3fdf09143d",
+    "Manifests/CoreController/FunctionalGates/functional48_9e7b1dd9_3518000/closure.json": "1422b302221a4e4ac40d577ec8e72b9f62d73e6f173c42ea675699a2af4fc1c5",
+    "Manifests/CoreController/FunctionalGates/functional48_9e7b1dd9_3518000/spec.json": "eb3eb20bb84e72e6dd634ab407a51f999a56a8267d86f89aeebac44ee149c637",
+    "Manifests/PackedController/Development/screen40_7f9b527d_3328019/closure.json": "c6f64a6aa73165a76ed5c27be0fcffce9f51e3dbe858ecc31f28af70fc3768c2",
+    "Native/Development/core_calibration/calibration_plan.json": "017761e9769e89459b7f0c090505c1278bf8dbc70396686c247b54c12721c928",
+    "Native/Development/core_calibration/source_manifest.json": "ba61d16db8171512ca978e282ce36d452952379f394157c2d935cdc51c60e82e",
+    "Reports/CoreCalibration/Build/ba61d16db8171512/CodegenReview/review.json": "c1ba9ce3648de04114b80341154c5dc2a5b3651941bf980529944548aa877ed2",
+    "Reports/CoreCalibration/Build/ba61d16db8171512/receipt.json": "d388a332b8f6cc6fffe325f46d2cdc3f2d87bfd9da00b342a4cf2da9aa1b90b3"
+  },
+  "authority_paths": {
+    "budget_authority": "Manifests/PackedController/Development/screen40_7f9b527d_3328019/closure.json",
+    "build_receipt": "Reports/CoreCalibration/Build/ba61d16db8171512/receipt.json",
+    "calibration_plan": "Native/Development/core_calibration/calibration_plan.json",
+    "codegen_review": "Reports/CoreCalibration/Build/ba61d16db8171512/CodegenReview/review.json",
+    "notebook_source": "Manifests/CoreCalibration/calibration8_20261019/notebook_source.json",
+    "prior_closure": "Manifests/CoreController/FunctionalGates/functional48_9e7b1dd9_3518000/closure.json",
+    "prior_done": "Dataset/Raw/PiExperiments/CoreControllerFunctional/functional48_9e7b1dd9_3518000/done.json",
+    "prior_spec": "Manifests/CoreController/FunctionalGates/functional48_9e7b1dd9_3518000/spec.json",
+    "protocol": "Manifests/CoreCalibration/calibration8_20261019/protocol.md",
+    "runner_review": "Manifests/CoreCalibration/calibration8_20261019/runner_review.json",
+    "source_manifest": "Native/Development/core_calibration/source_manifest.json"
+  },
+  "automatic_retry": false,
+  "binary_path": "/home/research/Nazira_Crystals-Cyber/Native/Development/core_calibration/build/joint_calibration",
+  "binary_sha256": "4117a3d26727b1a64612720c3a68bd61df219e4355fbed8787dcf8b63bafdfe9",
+  "budget": {
+    "closed_unused": 31,
+    "component": 0,
+    "consumed_before": 941,
+    "consumed_ceiling": 949,
+    "from_pressure": 8,
+    "independent_final_reserved": 0,
+    "pressure_remaining": 44,
+    "remaining_after_ceiling": 75,
+    "slots": 8,
+    "total_development": 1024
+  },
+  "coefficient_estimation_in_runner": false,
+  "contexts_per_process": 12,
+  "cooldown_seconds": 0.5,
+  "cpu": 2,
+  "gate_dir": "/home/research/Nazira_Crystals-Cyber/Dataset/Raw/PiExperiments/CoreCalibration/calibration8_20261019",
+  "governor": "performance",
+  "inner_calls": 100,
+  "library_path": "/home/research/Nazira_Crystals-Cyber/Native/Development/vector_public_matrix/build/libpublic_matrix.a",
+  "library_sha256": "18fdab47121f1e9955f8e0e31f2692b5aa502b8a853edac75f7d1ed31004788f",
+  "plan": [
+    {
+      "process_index": 0,
+      "session_id": "calibration_p0"
+    },
+    {
+      "process_index": 1,
+      "session_id": "calibration_p1"
+    },
+    {
+      "process_index": 2,
+      "session_id": "calibration_p2"
+    },
+    {
+      "process_index": 3,
+      "session_id": "calibration_p3"
+    },
+    {
+      "process_index": 4,
+      "session_id": "calibration_p4"
+    },
+    {
+      "process_index": 5,
+      "session_id": "calibration_p5"
+    },
+    {
+      "process_index": 6,
+      "session_id": "calibration_p6"
+    },
+    {
+      "process_index": 7,
+      "session_id": "calibration_p7"
+    }
+  ],
+  "project_root": "/home/research/Nazira_Crystals-Cyber",
+  "proposal_status": "registered_before_acquisition",
+  "registered": true,
+  "registration": {
+    "notebook_source_sha256": "04bb396235113a9886a7a6f7cecfbc49b23b388e4b9e400e51d269f2b5886af2",
+    "registered_utc": "2026-10-19T16:27:03.277792+00:00"
+  },
+  "runner_sha256": "98e4a02ba2212771ae9a74419292a0c38a4a721d48cf9d3c88f8318f6cd57744",
+  "schema": "core_shared_calibration_v1",
+  "source_manifest_sha256": "ba61d16db8171512ca978e282ce36d452952379f394157c2d935cdc51c60e82e",
+  "timed_decapsulations_per_process": 7200,
+  "timeout_seconds": 120,
+  "total_planned_timed_decapsulations": 57600
+}

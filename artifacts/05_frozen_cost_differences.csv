@@ -1,0 +1,5 @@
+Quantity,Frozen median (µs)
+d_P = C00 − C10 (public hit saving),9.060825416666674
+d_S = C00 − C01 (secret hit saving),3.0465195833333345
+d_I = C10 + C01 − C00 − C11 (interaction),-0.0020908333333391057
+Both retained: C00 − C11,12.10525416666667

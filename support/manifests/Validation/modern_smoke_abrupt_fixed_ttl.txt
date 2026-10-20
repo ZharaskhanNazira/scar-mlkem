@@ -1,0 +1,1 @@
+session=modern_smoke_abrupt_fixed_ttl policy=fixed_ttl workload=abrupt seed=7781 requests=500 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9854475 summed_residency_ns=1774410101 cache_zeroizations=183 late_clear_count=0 max_lateness_ns=0 rejected_admissions=0 secrets_mlocked_bytes=1189152 peak_rss_bytes=5718016 cpu=2

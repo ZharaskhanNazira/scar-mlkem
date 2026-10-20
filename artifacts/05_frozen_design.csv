@@ -1,0 +1,14 @@
+Parameter,Value
+Method,SCAR-MLKEM
+Component mask,31
+"Forecast (k, ν, margin)","0, 2, 0"
+Secret lifetime T,10 ms
+Guard,500 µs
+Horizon,10 ms
+History capacity,1000
+Arenas,"32 KiB, 64 KiB"
+Contexts / requests per session,64 / 1000
+Primary comparison,Seed-only (standard)
+Secondary comparisons,"Public S3-FIFO, SIEVE, LeCaR, TinyLFU"
+Confirmation processes,720
+Reserved seeds per family,6

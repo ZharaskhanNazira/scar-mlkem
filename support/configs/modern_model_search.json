@@ -1,0 +1,46 @@
+{
+  "search": {
+    "RF": [
+      {
+        "n_estimators": 64,
+        "max_depth": 6,
+        "min_samples_leaf": 40
+      },
+      {
+        "n_estimators": 96,
+        "max_depth": 10,
+        "min_samples_leaf": 30
+      },
+      {
+        "n_estimators": 128,
+        "max_depth": 14,
+        "min_samples_leaf": 20
+      }
+    ],
+    "HGB": [
+      {
+        "max_iter": 64,
+        "max_leaf_nodes": 7,
+        "learning_rate": 0.1,
+        "min_samples_leaf": 40
+      },
+      {
+        "max_iter": 96,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.08,
+        "min_samples_leaf": 30
+      },
+      {
+        "max_iter": 144,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.05,
+        "min_samples_leaf": 20
+      }
+    ]
+  },
+  "selection": "mean of session Brier loss across the same 3 purged folds",
+  "seed": 2404,
+  "threads": 2,
+  "HGB_early_stopping": false,
+  "test_used": false
+}

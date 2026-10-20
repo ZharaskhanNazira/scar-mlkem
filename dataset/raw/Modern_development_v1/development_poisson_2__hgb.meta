@@ -1,0 +1,1 @@
+session=development_poisson_2 policy=hgb workload=poisson seed=200102 requests=1000 capacity=16 ttl_ns=10000000 guard_ns=200000 max_residency_ns=9853851 summed_residency_ns=235125880 cache_zeroizations=25 late_clear_count=0 max_lateness_ns=0 rejected_admissions=969 secrets_mlocked_bytes=1749152 peak_rss_bytes=3751936 cpu=2
